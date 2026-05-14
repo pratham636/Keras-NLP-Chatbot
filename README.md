@@ -13,8 +13,6 @@ You can add new capabilities to the bot by editing the `intents1.json` file. Sim
 
 Neural is a context-aware chatbot built using Python, TensorFlow, and Natural Language Processing (NLP). It uses a deep learning model to classify user intent and provide relevant responses based on a custom dataset.
 
-![Project Structure](AdobeExpressPhotos_61d3e427ce964f82a68817ce0072ac87_CopyEdited.png)
-
 ## 🚀 Features
 *   **Deep Learning Backend:** Built with Keras/TensorFlow.
 *   **Natural Language Processing:** Uses NLTK for tokenization and lemmatization.
@@ -32,35 +30,42 @@ Neural is a context-aware chatbot built using Python, TensorFlow, and Natural La
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone (https://github.com/pratham636/Keras-NLP-Chatbot.git)
+   ```
+   ```
    cd your-repo-name
-
-   Install Dependencies:
+   ```
+2. **Install Dependencies:**
 Make sure you have Python installed. You will need the following libraries:
 
-Bash
+```Bash
 pip install nltk tensorflow numpy
-Download NLTK Data:
+```
+3. **Download NLTK Data:**
 Run a Python shell and download the necessary resources:
 
+```
 Python
 import nltk
 nltk.download('punkt')
 nltk.download('wordnet')
-🎮 Usage
-1. Training the Model
+```
+## 🎮 Usage
+1. **Training the Model**
 Before running the bot, you must train the model using your intents file:
 
-Bash
+```Bash
 python training.py
+```
 This will generate chatbot_model.h5, words.pkl, and classes.pkl.
 
-2. Running the Chatbot
+**2. Running the Chatbot**
 Start the interaction by running:
 
-Bash
+```Bash
 python chartbox.py
-⚙️ How it Works
+```
+## ⚙️ How it Works
 Preprocessing: The bot tokenizes user input and lemmatizes words to find the base meaning.
 
 Bag of Words: It converts the input into a numerical array (0s and 1s) representing the presence of known words.
@@ -69,5 +74,5 @@ Classification: The neural network predicts the probability of each "intent" tag
 
 Response: The bot randomly selects a response from the matched intent in intents1.json.
 
-📝 Customization
+## 📝 Customization
 You can add new capabilities to the bot by editing the intents1.json file. Simply add a new tag, patterns (what the user says), and responses (what the bot says). Remember to re-run training.py after making changes!
