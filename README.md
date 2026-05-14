@@ -66,13 +66,13 @@ Start the interaction by running:
 python chartbox.py
 ```
 ## ⚙️ How it Works
-Preprocessing: The bot tokenizes user input and lemmatizes words to find the base meaning.
+**1. Preprocessing:** The bot tokenizes user input and lemmatizes words to find the base meaning.
 
-Bag of Words: It converts the input into a numerical array (0s and 1s) representing the presence of known words.
+**2. Bag of Words:** It converts the input into a numerical array (0s and 1s) representing the presence of known words.
 
-Classification: The neural network predicts the probability of each "intent" tag.
+**3.Classification:** The neural network predicts the probability of each "intent" tag.
 
-Response: The bot randomly selects a response from the matched intent in intents1.json.
+**4.Response:** The bot randomly selects a response from the matched intent in intents1.json.
 
 ## 📝 Customization
 You can add new capabilities to the bot by editing the intents1.json file. Simply add a new tag, patterns (what the user says), and responses (what the bot says). Remember to re-run training.py after making changes!
